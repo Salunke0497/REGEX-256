@@ -30,7 +30,10 @@ namespace RegularExpression
                     regex.ValidatePhoneNumber("91 8390266064");
                     break;
                 case 5:
-                    egex.ValidatePassword("Amol1234");
+                    regex.ValidatePassword("Amol1234");
+                    break;
+                case 6:
+                    regex.ValidateFirstCapitalLetterPassword("Amol1234");
                     break;
                 default:
                     break;

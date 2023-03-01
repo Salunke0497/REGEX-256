@@ -80,5 +80,19 @@ namespace RegularExpression
                 Console.WriteLine("Password is not Matching with regex");
             }
         }
+        //checking for validate Password(First Letter Capital) by using regex
+        //UC6
+        public void ValidateFirstCapitalLetterPassword(string Password)
+        {
+            string PasswordRegex = @"[A-Z]{1}[a-z0-9]{7}";
+            if (Regex.IsMatch(Password, PasswordRegex))
+            {
+                Console.WriteLine("Password is Matching with regex");
+            }
+            else
+            {
+                Console.WriteLine("Password is not Matching with regex");
+            }
+        }
     }
 }
