@@ -66,5 +66,19 @@ namespace RegularExpression
                 Console.WriteLine("Phone Number is not Matching with regex");
             }
         }
+        //checking for validate Password by using regex
+        //UC5
+        public void ValidatePassword(string Password)
+        {
+            string PasswordRegex = @"[A-Za-z0-9]{8}";
+            if (Regex.IsMatch(Password, PasswordRegex))
+            {
+                Console.WriteLine("Password is Matching with regex");
+            }
+            else
+            {
+                Console.WriteLine("Password is not Matching with regex");
+            }
+        }
     }
 }
