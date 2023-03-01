@@ -25,6 +25,9 @@ namespace RegularExpression
                 case 3:
                     regex.ValidateEmail("abc.xyz@bridgelabz.co.in");
                     break;
+                case 4:
+                    regex.ValidatePhoneNumber("91 8390266064");
+                    break;
                 default:
                     break;
             }                   

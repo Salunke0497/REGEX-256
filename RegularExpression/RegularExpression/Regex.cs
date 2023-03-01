@@ -52,6 +52,19 @@ namespace RegularExpression
                 Console.WriteLine("Email-ID is not Matching with regex");
             }
         }
-
+        //checking for validate PhoneNumber by using regex
+        //UC4
+        public void ValidatePhoneNumber(string PhoneNumber)
+        {
+            string Phone = @"[0-9]{1,2}\s[0-9]{10}";
+            if (Regex.IsMatch(PhoneNumber, Phone))
+            {
+                Console.WriteLine("Phone Number is Matching with regex");
+            }
+            else
+            {
+                Console.WriteLine("Phone Number is not Matching with regex");
+            }
+        }
     }
 }
