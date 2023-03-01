@@ -12,7 +12,16 @@ namespace RegularExpression
         static void Main(string[] args)
         {
             RegexClass regex = new RegexClass();
-            regex.ValidateFirstName("Amol");       
+            Console.WriteLine("choose one :\n1)Validate First Name");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    regex.ValidateFirstName("Amol");
+                    break;
+                default:
+                    break;
+            }                   
             Console.ReadLine();
         }
     }
