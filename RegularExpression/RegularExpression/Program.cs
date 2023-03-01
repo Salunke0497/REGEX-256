@@ -19,6 +19,12 @@ namespace RegularExpression
                 case 1:
                     regex.ValidateFirstName("Amol");
                     break;
+                case 2:
+                    regex.ValidateLastName("Salunke");
+                    break;
+                case 3:
+                    regex.ValidateEmail("abc.xyz@bridgelabz.co.in");
+                    break;
                 default:
                     break;
             }                   

@@ -38,5 +38,20 @@ namespace RegularExpression
                 Console.WriteLine("Last Name is not Matching with regex");
             }
         }
+        //checking for validate Email-Id by using regex
+        //UC3
+        public void ValidateEmail(string email)
+        {
+            string EmailID = "^[a-zA-Z]+[.+_-]{0,1}[a-z]+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-z]{2}){0,1}$";
+            if (Regex.IsMatch(email, EmailID))
+            {
+                Console.WriteLine("Email-ID is Matching with regex");
+            }
+            else
+            {
+                Console.WriteLine("Email-ID is not Matching with regex");
+            }
+        }
+
     }
 }
