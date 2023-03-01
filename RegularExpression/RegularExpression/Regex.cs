@@ -94,5 +94,19 @@ namespace RegularExpression
                 Console.WriteLine("Password is not Matching with regex");
             }
         }
+        //checking for validate Password(minimum one number in password) by using regex
+        //UC7
+        public void ValidateMinimumInOneNumPassword(string Password)
+        {
+            string PasswordRegex2 = "[A-Za-z][0-9]{,1}";  //string password = "[a-zA-Z][0-9]{1,}";
+            if (Regex.IsMatch(Password, PasswordRegex2))
+            {
+                Console.WriteLine("Password is Matching with regex");
+            }
+            else
+            {
+                Console.WriteLine("Password is not Matching with regex");
+            }
+        }
     }
 }

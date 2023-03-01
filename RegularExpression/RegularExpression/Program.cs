@@ -13,7 +13,7 @@ namespace RegularExpression
         static void Main(string[] args)
         {
             RegexClass regex = new RegexClass();
-            Console.WriteLine("choose one :\n1)Validate First Name");
+            Console.WriteLine("choose one :\n1)Validate First Name\n2)\n3)\n4)\n5)\n6)\n7)");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -34,6 +34,9 @@ namespace RegularExpression
                     break;
                 case 6:
                     regex.ValidateFirstCapitalLetterPassword("Amol1234");
+                    break;
+                case 7:
+                    regex.ValidateMinimumInOneNumPassword("Amol1123");
                     break;
                 default:
                     break;
