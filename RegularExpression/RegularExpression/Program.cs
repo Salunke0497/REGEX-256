@@ -13,12 +13,12 @@ namespace RegularExpression
         static void Main(string[] args)
         {
             RegexClass regex = new RegexClass();
-            Console.WriteLine("choose one :\n1)Validate First Name\n2)\n3)\n4)\n5)\n6)\n7)");
+            Console.WriteLine("choose one :\n1)Validate First Name\n2)ValidateLastName\n3)ValidateEmail\n4)ValidatePhoneNumber\n5)ValidatePassword\n6)ValidateFirstCapitalLetterPassword\n7)ValidateMinimumInOneNumPassword");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
                 case 1:
-                    regex.ValidateFirstName("Amol");
+                    regex.ValidateFirstName("amol");
                     break;
                 case 2:
                     regex.ValidateLastName("Salunke");
@@ -36,6 +36,9 @@ namespace RegularExpression
                     regex.ValidateFirstCapitalLetterPassword("Amol1234");
                     break;
                 case 7:
+                    regex.ValidateMinimumInOneNumPassword("Amol1123");
+                    break;
+                case 8:
                     regex.ValidateMinimumInOneNumPassword("Amol1123");
                     break;
                 default:
