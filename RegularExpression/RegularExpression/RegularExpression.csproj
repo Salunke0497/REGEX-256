@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Regex.cs" />
+    <Compile Include="RegexClass.cs" />
+    <Compile Include="RegexException.cs" />
+    <Compile Include="UserRegistrationCustomException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
